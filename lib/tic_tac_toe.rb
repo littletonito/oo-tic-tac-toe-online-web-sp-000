@@ -46,14 +46,14 @@ class TicTacToe
     turn_count.even? ? "X" : "O"
   end
 
-  def turn(index)
+  def turn(index) #ask for input
     input = gets.chomp
     input_to_index(input)
       if valid_move?(index) == true
         move(index, token = "X")
-        current_player
+        # current_player
       else
-
+        turn
       end
     display_board
   end

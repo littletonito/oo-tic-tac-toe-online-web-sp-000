@@ -67,7 +67,8 @@ class TicTacToe
   end
 
   def full?
-    @board.all? { |e| e == "X" || "O"  }
+    if @board.all? { |e| e == "X" || "O"  }
+    end
   end
 
   def draw?
@@ -88,7 +89,7 @@ class TicTacToe
     turn until over?
     puts winner ? "Congratulations #{winner}!" : "Cat's Game!"
   end
-  
+
 
 end
 

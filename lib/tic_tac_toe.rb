@@ -55,9 +55,13 @@ class TicTacToe
       else
         turn
       end
-    # display_board
+    display_board
   end
 
+  def won?
+
+  end
+  
 end
 
 
